@@ -84,7 +84,8 @@ static int = h
 
 
 
-
+//inheritance 
+1.encapsulation - raping the data member
 
 java convert into whitegod java virtual machine 
 
