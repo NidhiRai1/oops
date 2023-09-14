@@ -53,6 +53,7 @@ hero *b = new hero ;
 
 -constructor - when an object got created it got invocted with no rteurn type
 when we write hero h1 then hero.h1 constructor got called 
+once called at the time o construction of the object
 1.default constructor with no parameters 
 hero(){
 cout<<"constructor call" ; }
@@ -68,6 +69,22 @@ shallow copy - default copy constructor do shallow copy here memory got accessed
 deep copy - 
 
 --copy assignment opperator - object created already then you copy through this operator
+
+-distructor - to deallocated the memory we use this , called only once for the object at the time o distruction
+for static allocation distructor called autometically but for dynamic allocation distructor had to called manully
+~hero(){ cout<< );
+*static function - no need to creat object ,this keyword won't be their and static function access static member
+static int = h 
+
+//static keyword - 
+
+
+
+
+
+
+
+
 
 java convert into whitegod java virtual machine 
 
