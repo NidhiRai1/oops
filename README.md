@@ -83,11 +83,41 @@ static int = h
 
 
 
+//4 pillars of oops 
+1.encapsulation (info. hiding)- raping the data member AND member function
+    class use both data member and member function being declired inside
+  fully enpaculated is that where all the data member are marked private
+advantages - data hiding by private marking , security inc. ,
+      class will be marked read only , managbility
 
-//inheritance 
-1.encapsulation - raping the data member
+2.inheritance - property of super class got inherit into some other class
+         parant class (super class ) -  sub class 
 
-java convert into whitegod java virtual machine 
+public mode - class child_name : public super_name{
+string colour ;
+void week(){ cout<< colour.}
+
+else their are private and protected mode
+
+----type of inheritance 
+1.single - 
+2.multilevel - multiple level pe inheritence
+3.multiple - c is a class that inherit onjects from different multiple classes
+            class child_name : public parent1_name , public parent2_name {    }
+4.hyrarchial - one class parent classes for multiple classes
+5.hybrid - combination of more than one type of inheritance
+
+------ambiguty - resolve through scope resolution operator 
+      in case of multiple inheritance - we see this when the same name function called from different parant  class
+      then to access them we use this operator
+    obj.a::func() ;
+
+
+3. polymorphisum - single action performed in multiple ways
+   (i).compile time - in how many different form this intity going to exit
+           it has function overloading and 
+5. 
+java convert into whitegod java virtual machine  , code reuseability
 
 mulyilevel - c - a - b
 multiplelevel - more than two paretn for a child 
