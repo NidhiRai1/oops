@@ -116,7 +116,6 @@ else their are private and protected mode
 3. polymorphisum - single action performed in multiple ways
    (i).compile time - in how many different form this intity going to exit
            it has function overloading and 
-5. 
 java convert into whitegod java virtual machine  , code reuseability
 
 mulyilevel - c - a - b
@@ -134,4 +133,13 @@ private - class inside that method can
 run time (overwritting)- if the function in parant and child class
 compile time(overloading) - if both the function inside same class
 -abstract = hide the underlying complexity of the system from teh users 
-abstract keyword - no need to difine in that parant classes they define in derived class 
+abstract keyword - no need to difine in that parant classes they define in derived class
+
+4.abstraction - implementation hiding 
+
+interfacing can be implemented through sbstesct keyword ehere , abstracted can't be implemented
+through interface and abstract key had static ,non static , final and non final variable but interface have only static or ginal variable 
+
+
+
+ 
