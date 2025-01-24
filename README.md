@@ -1,10 +1,20 @@
 # oops
 oops
 
-oops - things revolve around object program become real world so , it's redability encahnce
+Diference between oops and sop(structured priented programming)
+oops - things revolve around object + class insted of function program become real world so , it's redability encahnce , reduce redundancy, increase reusability, buttom-top approch , good for data hiding
+sop - it provode the logical structuer to program where program is divided funcion , top - bottom appproch , no suppport for data hiding 
 
-class - it is a user defined data type 
+class - it is a blue print of object (user defined data type) 
 object - it is instance of class
+
+--Explianing with an example:
+
+class Student:
+    name = "nidhi"
+# now defineing the instance/object here s1 is the object and student is class 
+s1 = Student()
+print(s1.name())
 
 keywords
 -- THIS - THE ADDRESS OF THE CURRENT OBJECT GOT STORED HERE
