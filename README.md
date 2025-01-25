@@ -5,7 +5,7 @@ Diference between oops and sop(structured priented programming)
 oops - things revolve around object + class insted of function program become real world so , it's redability encahnce , reduce redundancy, increase reusability, buttom-top approch , good for data hiding
 sop - it provode the logical structuer to program where program is divided funcion , top - bottom appproch , no suppport for data hiding 
 
-class - it is a blue print of object (user defined data type) 
+class - it is a blue print of object (class = method(function) + attribute(properties))
 object - it is instance of class
 
 --Explianing with an example:
@@ -14,40 +14,8 @@ class Student:
     name = "nidhi"
 # now defineing the instance/object here s1 is the object and student is class 
 s1 = Student()
-print(s1.name())
+print(s1.name)
 
-keywords
--- THIS - THE ADDRESS OF THE CURRENT OBJECT GOT STORED HERE
-class hero{
-//properties 
-public:
-  int health ; 
-private:
-char car ;
-
-char getcar(){
-return car ;}
-
-void setcar(char x){
- car = x ; }
-
- hero(int health){
- this->health = health ;
-  }:
-
-  int main(){
-  //creation of object
-  hero hi; 
-  hi.health = 10 ;
- cout<<hi.getcar();
-  cout<<sizeof(hi) ;
-   cout<<h1.health ;
-
-   //dynamic allocation 
-   hero *a = new hwro() ;
-   cout<< a->health ;
-   cout<<a->getcar ;
-  }
 **in case of empty class the memory allocation is of 1 byte
 property of object got access through dot operator
   cout<<h1.health ;
@@ -61,19 +29,46 @@ access the private access modifier through geter and seter
 --// dynamic allocation
 hero *b = new hero ;
 
--constructor - when an object got created it got invocted with no rteurn type
+-constructor - when an object got created it got iniciated automatically with no rteurn type
 when we write hero h1 then hero.h1 constructor got called 
 once called at the time o construction of the object
-1.default constructor with no parameters 
-hero(){
-cout<<"constructor call" ; }
-2.parametaris constructor
-hero(int health){
-this->health = health) ; }
-3.copy constructor
-  pass by value - makethe copy
-  pass by reference - make changes then got into original 
+--Defult constructor -
+def __init__(self):
+      pass 
+-- Parametarized constructer
+class Student:
+  name = "hero"
+  def __init__(self , fulname):  
+      print(self) #print student
+      print("adding student to bd")
+      self.name = fulname
+ 
+s1 = student("nidhi")
+print(s1.name) #karan
 
+class Student:
+  collegename = "hero" #Class attrubute - the instance that are comman for all the object we make class attribute 
+  name = "abc" 
+  def __init__(self, name, marks):
+      print(self) #print student
+      print("adding student to bd")
+      self.name = name   #instance attribute the instance of the class are differenct 
+      self.marks = marks
+ def welcome(self):    #mehods
+       print("welocome student", self.name)
+ def get_marks(self):
+      return self.mark  
+      
+s1 = student("nidhi", 92)
+print(s1.name, s1.marks) #karan
+s1.welcome()  #print welcome student nidhi
+print(s1.get_mak()) #print 92
+
+--IN THE CASE OF SAME CLASS AND INSTANCE ATTRUBUTE THE INSTANCE HAS MORE PRECIDENCE MEAN'S THAT GOT EXECUTED .
+
+--Here SELF is a reference of the current instance of obect 
+
+--Static Method - Methid that doesn't use static parameter(work at class level) 
 ---copy things here through
 shallow copy - default copy constructor do shallow copy here memory got accessed by different names
 deep copy - 
