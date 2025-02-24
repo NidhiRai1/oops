@@ -3,7 +3,7 @@ oops
 
 Diference between oops and sop(structured priented programming)
 oops - things revolve around object + class insted of function program become real world so , it's redability encahnce , reduce redundancy, increase reusability, buttom-top approch , good for data hiding
-sop - it provode the logical structuer to program where program is divided funcion , top - bottom appproch , no suppport for data hiding 
+sop - it provode the logical structuer to program where program is divided funcion, top - bottom appproch , no suppport for data hiding 
 
 class - it is a blue print of object (class = method(function) + attribute(properties))
 object - it is instance of class
@@ -22,7 +22,30 @@ property of object got access through dot operator
 
 --access modifier(by default it's private)
 1.private - it can access inside the class only 
+
+Class Account:
+
+     def __init__(self , acc_no , act_pas):
+            self.__acc_no = acc_no  #become private
+            self.__acc_pas = acc_pas   #become private
+    
+    def reset(self):
+       print(self.__acc_pas)
+    
+acc1 = Account("123456", "asdfgh")
+print(acc1.reset()) #no error 
+print(acc1.acc_no, acc1.acc_pas)  #show error coz we are calleing rivate attribute them outside the class 
+     
+
 2.public - it can access inside and outsid the 
+
+Class Account:
+     def __init__(self , acc_no , act_pas):
+            self.acc_no = acc_no
+            self.acc_pas = acc_pas 
+acc1 = Account("123456", "asdfgh")
+
+print(acc1.acc_no, acc1.acc_pas)
 
 access the private access modifier through geter and seter 
 
@@ -98,9 +121,7 @@ advantages - data hiding by private marking , security inc. ,
 2.inheritance - property of super class got inherit into some other class
          parant class (super class ) -  sub class 
 
-public mode - class child_name : public super_name{
-string colour ;
-void week(){ cout<< colour.}
+public mode - class child_name : public super_name
 
 else their are private and protected mode
 
@@ -116,6 +137,7 @@ else their are private and protected mode
       in case of multiple inheritance - we see this when the same name function called from different parant  class
       then to access them we use this operator
     obj.a::func() ;
+
 
 
 3. polymorphisum - single action performed in multiple ways
